@@ -1,59 +1,28 @@
-# MyApp
+# 🌐 Angular Zone
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.10.
+![Angular](https://img.shields.io/badge/Angular-v19.2.10-DD0031?logo=angular&logoColor=white)
+![License](https://img.shields.io/github/license/your-username/angular-zone)
+![Deployed](https://img.shields.io/website?url=https%3A%2F%2Fangular-zone.vercel.app)
 
-## Development server
+A **learning hub and playground** for Angular enthusiasts. This project is a growing collection of **mini-apps, reusable components, tutorials, and college projects** built with Angular. Whether you're learning, contributing, or referencing, this repository will grow to cover a wide range of Angular use cases.
 
-To start a local development server, run:
+### 🔗 Live App
+👉 Visit the deployed app: [https://angular-zone.vercel.app](https://angular-zone.vercel.app)
 
-```bash
-ng serve
-```
+---
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 📦 Project Structure
 
-## Code scaffolding
+- `/src/app/` – Main source folder containing components, modules, and services.
+- `/assets/` – Static files and resources.
+- `/environments/` – Environment-specific variables.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+---
 
-```bash
-ng generate component component-name
-```
+## 🚀 Getting Started
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
+### 1. Clone the repository
 
 ```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+git clone https://github.com/your-username/angular-zone.git
+cd angular-zone
