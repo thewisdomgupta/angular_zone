@@ -1,28 +1,35 @@
 # 🌐 Angular Zone
 
-![Angular](https://img.shields.io/badge/Angular-v19.2.10-DD0031?logo=angular&logoColor=white)
-![License](https://img.shields.io/github/license/your-username/angular-zone)
-![Deployed](https://img.shields.io/website?url=https%3A%2F%2Fangular-zone.vercel.app)
+[![Angular](https://img.shields.io/badge/Angular-v19.2.10-DD0031?logo=angular&logoColor=white)](https://angular.io)
+[![License](https://img.shields.io/github/license/your-username/angular-zone)](./LICENSE)
+[![Live Site](https://img.shields.io/website?url=https%3A%2F%2Fangular-zone.vercel.app&label=Live%20App)](https://angular-zone.vercel.app)
+[![Issues](https://img.shields.io/github/issues/your-username/angular-zone)](https://github.com/your-username/angular-zone/issues)
+[![Forks](https://img.shields.io/github/forks/your-username/angular-zone?style=social)](https://github.com/your-username/angular-zone/network/members)
 
-A **learning hub and playground** for Angular enthusiasts. This project is a growing collection of **mini-apps, reusable components, tutorials, and college projects** built with Angular. Whether you're learning, contributing, or referencing, this repository will grow to cover a wide range of Angular use cases.
-
-### 🔗 Live App
-👉 Visit the deployed app: [https://angular-zone.vercel.app](https://angular-zone.vercel.app)
-
----
-
-## 📦 Project Structure
-
-- `/src/app/` – Main source folder containing components, modules, and services.
-- `/assets/` – Static files and resources.
-- `/environments/` – Environment-specific variables.
+> 🎯 A centralized Angular **learning hub** featuring reusable components, mini-projects, tutorials, and college-level projects. Whether you're a beginner or advanced Angular developer, this repository aims to provide something valuable to everyone.
 
 ---
 
-## 🚀 Getting Started
+## 🔗 Live Demo
 
-### 1. Clone the repository
+🚀 Deployed at: [https://angular-zone.vercel.app](https://angular-zone.vercel.app)
+
+---
+
+## 📁 Project Structure
 
 ```bash
-git clone https://github.com/your-username/angular-zone.git
-cd angular-zone
+angular-zone/
+│
+├── src/
+│   ├── app/              # Root Angular app module
+│   │   ├── components/   # Reusable UI components
+│   │   ├── services/     # Shared services
+│   │   ├── pages/        # Routed feature pages / mini-apps
+│   │   └── app.module.ts
+│   ├── assets/           # Static assets like images, JSON, etc.
+│   └── environments/     # Environment-specific config
+│
+├── angular.json          # Angular CLI configuration
+├── package.json          # Project dependencies and scripts
+└── README.md             # Project overview and usage guide
