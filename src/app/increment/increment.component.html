@@ -1,11 +1,53 @@
 <div class="counter_container">
-    <h3 class="card_title">Counter Box</h3>
-    <h2 class="counter_box">{{ count }}</h2>
-  
-    <div class="button_group">
-      <button class="plus_btn" (click)="handleCount('plus')">Increment</button>
-      <button class="reset_btn" (click)="handleCount('reset')">Reset</button>
-      <button class="minus_btn" (click)="handleCount('minus')">Decrement</button>
+  <h3 class="card_title">Counter Box</h3>
+  <h2 class="counter_box">{{ count }}</h2>
+
+  <div class="button_group">
+    <button class="plus_btn" (click)="handleCount('plus')">Increment</button>
+    <button class="reset_btn" (click)="handleCount('reset')">Reset</button>
+    <button class="minus_btn" (click)="handleCount('minus')">Decrement</button>
+  </div>
+  <button class="get_code_btn" (click)="toggleCode()">{{showCode? 'Hide Code': 'Show Code'}}</button>
+</div>
+
+<!-- Code Viewer Section -->
+
+@if (showCode) {
+<div class="code_card">
+  <h3 class="card_title">🔍 Source Code</h3>
+  <div class="code_wrapper">
+    <div class="code_section">
+      <h4>HTML</h4>
+      <div class="code_block">
+        <button class="copy_icon_btn" (click)="copyCode('html')"
+          [title]="copiedSection === 'html' ? 'Copied!' : 'Copy Code'">
+          {{ copiedSection === 'html' ? '✅' : '📋' }}
+        </button>
+        <pre><code>{{ htmlCode }}</code></pre>
+      </div>
+    </div>
+
+    <div class="code_section">
+      <h4>TypeScript</h4>
+      <div class="code_block">
+        <button class="copy_icon_btn" (click)="copyCode('ts')"
+          [title]="copiedSection === 'ts' ? 'Copied!' : 'Copy Code'">
+          {{ copiedSection === 'ts' ? '✅' : '📋' }}
+        </button>
+        <pre><code>{{ tsCode }}</code></pre>
+      </div>
+    </div>
+
+    <div class="code_section">
+      <h4>CSS</h4>
+      <div class="code_block">
+        <button class="copy_icon_btn" (click)="copyCode('css')"
+          [title]="copiedSection === 'css' ? 'Copied!' : 'Copy Code'">
+          {{ copiedSection === 'css' ? '✅' : '📋' }}
+        </button>
+        <pre><code>{{ cssCode }}</code></pre>
+      </div>
     </div>
   </div>
-  
+</div>
+}
