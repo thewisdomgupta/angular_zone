@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { IncrementComponent } from './increment/increment.component';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [IncrementComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
