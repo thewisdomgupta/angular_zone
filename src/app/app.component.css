@@ -10,4 +10,15 @@
     margin: 20px auto; 
     width: fit-content;
   }
+
+  hr {
+    border: none;
+    height: 3px;
+    background: linear-gradient(to right, #00796b, #26a69a, #00796b);
+    border-radius: 5px;
+    margin: 40px auto;
+    width: 80%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
   

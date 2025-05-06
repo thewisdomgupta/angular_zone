@@ -1,0 +1,87 @@
+.counter_container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 30px;
+    width: 700px;
+    margin: 40px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .counter_box {
+    border-radius: 5px;
+    background-color: rgb(246, 9, 191);
+    width: 100px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    margin: 0;
+  }
+  
+  .button_group {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .plus_btn, .minus_btn, .reset_btn {
+    width: 120px;
+    padding: 15px;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .plus_btn {
+    background-color: #28a745;
+  }
+  .minus_btn {
+    background-color: #dc3545;
+  }
+  .reset_btn {
+    background-color: #ffc107;
+    color: black;
+  }
+  
+  .plus_btn:hover {
+    background-color: #218838;
+  }
+  .minus_btn:hover {
+    background-color: #c82333;
+  }
+  .reset_btn:hover {
+    background-color: #e0a800;
+  }
+
+  .card_title {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  .circle_box {
+    width: 180px;
+    height: 180px;
+    background: radial-gradient(circle at top left, #ff6ec4, #7873f5);
+    border-radius: 50%;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+  }
+  
