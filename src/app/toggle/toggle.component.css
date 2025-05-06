@@ -84,4 +84,79 @@
     color: white;
     transition: opacity 0.3s ease, transform 0.3s ease;
   }
+
+  .get_code_btn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .get_code_btn:hover {
+    background-color: #0056b3;
+  }
+
+  .code_card {
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .code_wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .code_section h4 {
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  pre {
+    background-color: #1c1c1c;
+    color: #f8f8f2;
+    padding: 15px;
+    border-radius: 6px;
+    font-family: Consolas, monospace;
+    white-space: pre-wrap; 
+    word-break: break-word;   
+    overflow-x: hidden;  
+  }
+  
+  .code_section {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+
+  .code_block {
+    position: relative;
+  }
+
+  .copy_icon_btn {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+    transition: color 0.3s;
+    color: #ccc;
+  }
+  
+  .copy_icon_btn:hover {
+    color: #fff;
+  }
   
