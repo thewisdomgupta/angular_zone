@@ -6,7 +6,7 @@
     }
 
     <div class="button_group">
-        <button class="plus_btn" (click)=" handleToggle()">Show</button>
+        <button class="plus_btn" (click)=" handleToggle()">{{toogleBox? 'Hide': 'Show'}}</button>
     </div>
     <button class="get_code_btn" (click)="toggleCode()">{{showCode? 'Hide Code': 'Show Code'}}</button>
 </div>
