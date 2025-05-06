@@ -11,25 +11,12 @@
     gap: 30px;
   }
   
-  .counter_box {
-    border-radius: 5px;
-    background-color: rgb(246, 9, 191);
-    width: 100px;
-    height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    font-size: 40px;
-    margin: 0;
-  }
-  
   .button_group {
     display: flex;
     gap: 15px;
   }
   
-  .plus_btn, .minus_btn, .reset_btn {
+  .plus_btn {
     width: 120px;
     padding: 15px;
     border: none;
@@ -43,22 +30,9 @@
   .plus_btn {
     background-color: #28a745;
   }
-  .minus_btn {
-    background-color: #dc3545;
-  }
-  .reset_btn {
-    background-color: #ffc107;
-    color: black;
-  }
   
   .plus_btn:hover {
     background-color: #218838;
-  }
-  .minus_btn:hover {
-    background-color: #c82333;
-  }
-  .reset_btn:hover {
-    background-color: #e0a800;
   }
 
   .card_title {
@@ -99,64 +73,5 @@
   
   .get_code_btn:hover {
     background-color: #0056b3;
-  }
-
-  .code_card {
-    width: 100%;
-    max-width: 1200px;
-    margin: 20px auto;
-    background-color: #f8f9fa;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .code_wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 20px;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  
-  .code_section h4 {
-    margin-bottom: 10px;
-    color: #333;
-  }
-  
-  pre {
-    background-color: #1c1c1c;
-    color: #f8f8f2;
-    padding: 15px;
-    border-radius: 6px;
-    font-family: Consolas, monospace;
-    white-space: pre-wrap; 
-    word-break: break-word;   
-    overflow-x: hidden;  
-  }
-  
-  .code_section {
-    flex: 1 1 0;
-    min-width: 0;
-  }
-
-  .code_block {
-    position: relative;
-  }
-
-  .copy_icon_btn {
-    position: absolute;
-    top: 8px;
-    right: 10px;
-    background: none;
-    border: none;
-    font-size: 22px;
-    cursor: pointer;
-    transition: color 0.3s;
-    color: #ccc;
-  }
-  
-  .copy_icon_btn:hover {
-    color: #fff;
   }
   

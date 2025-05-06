@@ -1,0 +1,17 @@
+<div class="code_card">
+    <h3 class="card_title">🔍 Source Code</h3>
+    <div class="code_wrapper">
+        @for (sec of ['html', 'ts', 'css']; track sec) {
+        <div class="code_section">
+            <h4>{{ sec.toUpperCase() }}</h4>
+            <div class="code_block">
+                <button class="copy_icon_btn" (click)="copyCode(castSection(sec))"
+                    [title]="copiedSection === sec ? 'Copied!' : 'Copy Code'">
+                    {{ copiedSection === sec ? '✅' : '📋' }}
+                </button>
+                <pre><code>{{ sec === 'html' ? htmlCode : sec === 'ts' ? tsCode : cssCode }}</code></pre>
+            </div>
+        </div>
+        }
+    </div>
+</div>

@@ -11,43 +11,7 @@
 </div>
 
 <!-- Code Viewer Section -->
-
 @if (showCode) {
-<div class="code_card">
-  <h3 class="card_title">🔍 Source Code</h3>
-  <div class="code_wrapper">
-    <div class="code_section">
-      <h4>HTML</h4>
-      <div class="code_block">
-        <button class="copy_icon_btn" (click)="copyCode('html')"
-          [title]="copiedSection === 'html' ? 'Copied!' : 'Copy Code'">
-          {{ copiedSection === 'html' ? '✅' : '📋' }}
-        </button>
-        <pre><code>{{ htmlCode }}</code></pre>
-      </div>
-    </div>
-
-    <div class="code_section">
-      <h4>TypeScript</h4>
-      <div class="code_block">
-        <button class="copy_icon_btn" (click)="copyCode('ts')"
-          [title]="copiedSection === 'ts' ? 'Copied!' : 'Copy Code'">
-          {{ copiedSection === 'ts' ? '✅' : '📋' }}
-        </button>
-        <pre><code>{{ tsCode }}</code></pre>
-      </div>
-    </div>
-
-    <div class="code_section">
-      <h4>CSS</h4>
-      <div class="code_block">
-        <button class="copy_icon_btn" (click)="copyCode('css')"
-          [title]="copiedSection === 'css' ? 'Copied!' : 'Copy Code'">
-          {{ copiedSection === 'css' ? '✅' : '📋' }}
-        </button>
-        <pre><code>{{ cssCode }}</code></pre>
-      </div>
-    </div>
-  </div>
-</div>
+  <app-show-code [htmlCode]="htmlCode" [tsCode]="tsCode" [cssCode]="cssCode">
+  </app-show-code>
 }

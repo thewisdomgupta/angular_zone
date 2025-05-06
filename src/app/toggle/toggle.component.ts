@@ -1,35 +1,18 @@
 import { Component } from '@angular/core';
+import { ShowCodeComponent } from '../shared/show-code/show-code.component';
 
 @Component({
   selector: 'app-toggle',
-  imports: [],
+  imports: [ShowCodeComponent],
   templateUrl: './toggle.component.html',
   styleUrl: './toggle.component.css'
 })
 export class ToggleComponent {
   toogleBox: boolean = true;
   showCode: boolean = false;
-  copiedSection: string | null = null;
 
   handleToggle() {
     this.toogleBox = !this.toogleBox;
-  }
-
-  copyCode(section: 'html' | 'ts' | 'css'): void {
-    let codeToCopy = '';
-    if (section === 'html') codeToCopy = this.htmlCode;
-    else if (section === 'ts') codeToCopy = this.tsCode;
-    else if (section === 'css') codeToCopy = this.cssCode;
-
-    navigator.clipboard.writeText(codeToCopy).then(() => {
-      this.copiedSection = section;
-
-      setTimeout(() => {
-        this.copiedSection = null;
-      }, 1500);
-    }).catch(err => {
-      console.error('Failed to copy: ', err);
-    });
   }
 
   toggleCode() {

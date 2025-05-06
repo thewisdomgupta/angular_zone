@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { ShowCodeComponent } from '../shared/show-code/show-code.component';
 
 @Component({
   selector: 'app-increment',
-  imports: [],
+  imports: [ShowCodeComponent],
   templateUrl: './increment.component.html',
   styleUrl: './increment.component.css',
   preserveWhitespaces: true
@@ -20,23 +21,6 @@ export class IncrementComponent {
     } else if(val==='reset'){
       this.count = 0;
     }
-  }
-  
-  copyCode(section: 'html' | 'ts' | 'css'): void {
-    let codeToCopy = '';
-    if (section === 'html') codeToCopy = this.htmlCode;
-    else if (section === 'ts') codeToCopy = this.tsCode;
-    else if (section === 'css') codeToCopy = this.cssCode;
-  
-    navigator.clipboard.writeText(codeToCopy).then(() => {
-      this.copiedSection = section;
-  
-      setTimeout(() => {
-        this.copiedSection = null;
-      }, 1500);
-    }).catch(err => {
-      console.error('Failed to copy: ', err);
-    });
   }
 
   htmlCode: string = `
